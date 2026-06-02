@@ -3,7 +3,7 @@ const contact = {
         const btn = document.getElementById('copy-email');
         if (btn) {
             btn.addEventListener('click', () => {
-                navigator.clipboard.writeText('email@exemplo.com').then(() => {
+                navigator.clipboard.writeText('gustavomichelotto.dev@gmail.com').then(() => {
                     const icon = document.getElementById('email-icon');
                     const text = document.getElementById('email-text');
                     icon.className = 'fas fa-check text-green-400';
@@ -11,7 +11,7 @@ const contact = {
                     text.className = 'text-green-400';
                     setTimeout(() => {
                         icon.className = 'fas fa-envelope';
-                        text.textContent = 'email@exemplo.com';
+                        text.textContent = 'gustavomichelotto.dev@gmail.com';
                         text.className = '';
                     }, 2000);
                 });
